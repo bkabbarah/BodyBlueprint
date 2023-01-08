@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+  background-image: url("background.jpg");
+}
+body {
+    height: 100%;
+}
+
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+h1{
+  font-family: 'Roboto';
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  bottom: 60%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  text-shadow: 3px 3px 4px #000000;
+}
+h2{
+  font-family: 'Roboto';
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  bottom: 56%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  color: rgba(255,255,255,0.7);
+  text-shadow: 2px 2px 10px #000000;
+}
+.userHeight1{
+  position: absolute;
+  bottom: 53%;
+  right: 53.6%;
+  transform: translate(50%, 50%);
+  width:113px;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  border-radius:10px;
+}
+.userHeight1::placeholder{
+  text-align: right;
+}
+
+.userHeight2{
+  position: absolute;
+  bottom: 53%;
+  right: 46.3%;
+  transform: translate(50%, 50%);
+  width:110px;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  border-radius:10px;
+}
+
+.userHeight2::placeholder{
+  text-align: right;
+}
+  
+.userWeight{
+  position: absolute;
+  bottom: 48%;
+  right: 47.4%;
+  transform: translate(50%, 50%);
+  width: 150px;
+  height: 25px;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  border-radius:10px;
+}
+.userWeight::placeholder{
+  text-align: right;
+}
+.userAge{
+  position: absolute;
+  bottom: 48%;
+  right: 54.7%;
+  transform: translate(50%, 50%);
+  width: 70px;
+  height: 25px;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  border-radius:10px;
+}
+.userAge::placeholder{
+  text-align: right;
+}
+.sideinfo{
+  height: 100%; 
+  width: 350px; 
+  position: fixed;
+  font-size: 20px;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #ffffff; 
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding: 50px;
+  font-family: "roboto";
+}
+.buttonback{
+  z-index: 1;
+  background-color: white;
+  height: 140px;
+  width: 264.5px;
+  position: absolute;
+  bottom: 37%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
+}
+.dropdown {
+  z-index: 3;
+  display: inline-block;
+  position: absolute;
+  bottom: 52.8%;
+  right: 60%;
+  transform: translate(50%, 50%);
+  width: 100px;
+  height: 40px;
+  font-family: "roboto";
+}
+
+.dropdown-content {
+  font-family: "roboto";
+  text-align: center;
+  background-color: white;
+  color: #636363;
+  border: 0;
+  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  border-radius:10px;
+  position: absolute;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  z-index: 3;
+  display: inline-block;
+  bottom: 53.2%;
+  right: 60%;
+  transform: translate(50%, 50%);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
+.dropdown-content a {
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color:lightblue;
+}
+.intro{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 30px;
+}
+.subtext{
+  font-size: 20px;
+  line-height: 50px;
+  padding-top: 100px;
+}
+.subsubtext{
+  padding-top: 120px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.subsubsubtext{
+  font-weight: bold;
+  font-size: 25px;
+}
+.love{
+  font-size: 16px;
+  padding-top:220px;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[class=malecheck] + img {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  bottom: 37%;
+  right: 53.5%;
+  transform: translate(50%, 50%);
+}
+[class=femalecheck] + img {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  bottom: 37%;
+  right: 46.5%;
+  transform: translate(50%, 50%);
+}
+[class=femalecheck] + img:hover{
+  background-color: lightblue;
+}
+.pictip:hover span {
+  z-index: 3;
+  display: block;
+}
+[class=malecheck] + img:hover{
+  background-color: lightblue;
+}
+
+[type=radio]:checked + img {
+  outline: 2px solid lightblue;
+}
+
+.submit{
+  position: absolute;
+  bottom: 26%;
+  right: 50%;
+  font-family: "roboto";
+  transform: translate(50%, 50%);
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
+  border-radius:10px;
+}
+.submit:hover {
+  background-color: lightblue;
+}

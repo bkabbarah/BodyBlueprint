@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<div class="intro">
+  <h1 class="introtext"> With a BMI of <a id="userBMI"></a><a> . . .</a></a></h1>
+  <h1 class="introtext">you are considered </h1>
+  <h1 class="userState" id="userState">Underweight</h1>
+  <h1 class="dw"> but don't worry! We're here to work on that.</h1>
+</div>
+
+<div class="maintext">
+  <h1 class="maintextheader">Things to consider</h1>
+  <h2 class="diet">How's your diet?</h2>
+  <div class="dietsub">
+  <h3 class="diettips">Ensure you are eating an adequate amount of calories and protein everyday.</h3>
+  <h3 class="calories">Your BMR (Basal Metabolic Rate) is: <div id="userBMR"></div>
+  </h3>
+  <a class="bmrsub">This is the amount of calories your body would burn if you didn't move at all during the day. </a>
+  <h3 class="recommendation">Considering your activity level,</h3> <h3 class="trueCals">you burn about<a class ="trueCals" id="trueCals"></a> <a>calories per day.</a></h3>
+  <h3 class="diettips">To gain weight, aim for a caloric surplus of 300-500. Try getting in more calorie-dense foods throughout your day.</h3>
+  </div>
+  <h2 class="lifting">"Do you even lift bro?"</h2>
+  <div class='liftingsub'>
+  <h3 class="diettips">Lifting weights and putting on muscle is a great way to gain healthy weight.</h3>
+  <div class=liftingtips>
+    <h4>  &#x2022; Pick exercises that you find enjoyable</h4>
+    <h4>  &#x2022; Choose a routine and stick with it; consistency is key</h4>
+    <h4>  &#x2022; To avoid injury, focus on proper form and technique</h4>
+    <h4>  &#x2022; Aim for a protein intake of 1 gram per pound of body weight. For you that's <a id="protein"></a> grams per day.</h4>
+  </div>
+  </div> 
+
+
+
+</div>
+
+<div class="secondarytext">
+  <h1 class="secondarytextheader">Resources To Look At</h1>
+  <h2 class="gainweight">Gain Weight Healthily</h2>
+  <h3 class="resources"><a href="https://familydoctor.org/healthy-ways-to-gain-weight-if-youre-underweight/">FamilyDoctor.org</a></h3>
+  <h3 class="resources"><a href="https://www.healthdirect.gov.au/what-to-do-if-you-are-underweight#gain">HealthDirect.gov</a></h3>
+  <h2 class="gainweight">Dangers of Being Underweight</h2>
+  <h3 class="resources"><a href="https://www.healthline.com/health/underweight-health-risks">HealthLine.com</a></h3>
+  <h3 class="resources"><a href="https://www.medicalnewstoday.com/articles/321612#risks">MedicalNewsToday.com</a></h3>
+  <a href="https://www.myplate.gov/"><img src="FoodPlate1.jpg" alt="Create a Food Plate Nutrition Plan" align="right" style="width:250px;height:200px;position:relative;right:50px;bottom:230px;"></a>
+
+  <h3 class="createDiet">Create Your Diet By Clicking This Picture!</h3> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var queryString = window.location.search;
+    var params = new URLSearchParams(queryString)
+    var userBMI = params.get('bmi')
+    var userState = params.get('userState')
+    var userBMR = params.get('bmr')
+    var trueCals = params.get('trueCals')
+    var weight = params.get('weight')
+    var userStateElement = document.getElementById('userState')
+    var userBMIElement = document.getElementById('userBMI')
+    var userBMRElement = document.getElementById('userBMR')
+    var usertrueCalsElement = document.getElementById('trueCals')
+    var userproteinElement = document.getElementById('protein')
+
+
+
+    userBMIElement.textContent = userBMI
+    userBMRElement.textContent = userBMR
+    usertrueCalsElement.textContent = trueCals
+    userproteinElement.textContent = weight
+  </script>
+  <style>
+    html {
+      height: 100%;
+      background-image: url("background.jpg");
+    }
+
+    body {
+      height: 100%;
+    }
+    
+    .introtext {
+      margin-top: 30px;
+      margin-left: 30px;
+      font-family: Roboto;
+    }
+
+    .userState {
+      font-family: Poppins;
+      font-size: 70px;
+      color: orange;
+      margin-left: 160px;
+    }
+
+    .dw {
+      margin-left: 30px;
+      font-size: 25px;
+      font-family: Roboto;
+    }
+
+    .intro {
+      margin-left: 50px;
+      margin-top: 50px;
+      background-color: white;
+      width: 700px;
+      height: 400px;
+      padding: 10px;
+      border: 0;
+      box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
+      border-radius: 10px;
+    }
+
+    @keyframes bottomflyin {
+      0% {
+        left: 59px;
+        bottom: -600px;
+      }
+
+      100% {
+        left: 59px;
+        bottom: -120px;
+      }
+    }
+
+    div.secondarytext {
+      width: 700px;
+      length: 100px;
+      background-color: white;
+      padding: 10px;
+      border: 0;
+      box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
+      border-radius: 10px;
+      position: absolute;
+      animation-name: bottomflyin;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    .secondarytextheader {
+      margin-left: 160px;
+      font-family: "Poppins";
+    }
+
+    @keyframes topflyin {
+      0% {
+        right: 200px;
+        bottom: 1000px;
+      }
+
+      100% {
+        right: 200px;
+        bottom: 169px;
+      }
+    }
+
+    div.maintext {
+      width: 800px;
+      length: 1000px;
+      background-color: white;
+      padding: 10px;
+      border: 0;
+      box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
+      border-radius: 10px;
+      position: absolute;
+      animation-name: topflyin;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    .maintextheader {
+      text-align: center;
+      margin-left: 10px;
+      font-family: "Poppins";
+    }
+
+    .diet {
+      margin-left: 10px;
+      font-family: "roboto";
+    }
+
+    .diettips {
+      margin-left: 10px;
+      font-weight: 100;
+      font-family: "roboto";
+    }
+
+    .gainweight {
+      margin-left: 10px;
+      font-family: "roboto";
+    }
+
+    .resources {
+      margin-left: 10px;
+      font-weight: bold;
+      font-family: "roboto";
+    }
+    .createDiet {
+      position: relative;
+      left: 350px;
+      bottom:260px;
+      font-weight = bold;
+      font-family: "roboto";
+    }
+    .recommendation{
+      margin-left: 10px;
+      margin-top: 30px;
+      font-weight: 100;
+      font-family: "roboto";
+    }
+    .calories {
+      margin-left: 10px;
+      line-height: 30px;
+      font-family: "roboto"
+    }
+    .trueCals{
+      margin-left: 10px;
+      line-height: 30px;
+      font-family: "roboto"
+    }
+
+    .bmrsub {
+      font-weight: bold;
+      margin-left: 10px;
+      font-family: "roboto"
+    }
+
+    .dietsub, .liftingsub {
+      padding-left: 20px;
+    }
+    .lifting{
+      margin-top: 30px;
+      font-weight: bold;
+      margin-left: 10px;
+      font-family: "roboto"
+    }
+  .liftingtips{
+    font-weight: 100;
+    margin-left: 10px;
+    padding-left: 40px;
+    font-family: "roboto"
+  }
+  </style>
+
+
+
+
+</html>

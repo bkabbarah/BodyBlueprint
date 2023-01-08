@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <!--<a href="https://www.flaticon.com/free-icons/engineer" title="engineer icons">Engineer icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/engineer" title="engineer icons">Engineer icons created by Freepik - Flaticon</a>-->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+
+  
+
+</head>
+<div class="sideinfo">
+<div class="intro"> Everyone has goals, but sometimes, it can be hard to know where to start.</div>
+<div class="subtext">Don't worry, BodyBlueprint is here to help you set your goals and build the best version of you.</div>
+<div class ="subsubtext">To begin,</div> 
+<div class = "subsubsubtext">enter your information.</div>
+<div class="love"> Made with ❤️ by Harrison Park, Nathan Tran, Yahya Hasan, and Bashar Kabbarah</div>
+</div>
+
+  
+<body class="mainText">
+  <h1>BodyBlueprint</h1>
+  <h2>Laying out the ground work for your goals</h2>
+  <form id="userData" method="POST" action="page2.html">
+    <input type="text" class="userHeight1" id="userHeight1" name="userHeight1" placeholder="feet">
+    <input type="text" class="userHeight2" id="userHeight2" name="userHeight2" placeholder="inches">
+    <input type="text" class="userWeight" id="userWeight" name="userWeight" placeholder="pounds">
+    <input type="text" class="userAge" id="userAge" name="userAge" placeholder="years">
+    <select class="dropdown-content" id="calMod" placeholder="Activity Level">
+    <option selected disabled>Activity Level</option>
+    <option value="1.375">Light</option>
+    <option value="1.465">Moderate</option>
+    <option value="1.55">Intense</option>
+    </select>
+</div>
+    <label>
+      <input type="radio" class="malecheck" id="malecheck" name="gender" value="male">
+      <img src="engineer (2).png" alt="Option 1">
+    </label>
+    
+    <label>
+      <input type="radio" class="femalecheck" id="femalecheck" name="gender" value="female" alt="Option 2">
+      <img src="engineer (3).png">
+    </label>
+
+    
+    <input type="submit" class="submit">
+  </form>
+<div class="buttonback"></div>
+</body>
+
+</html>
